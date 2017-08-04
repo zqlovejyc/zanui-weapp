@@ -1,0 +1,11 @@
+<import src="/dist/toptip/index.wxml" />
+
+<view class="container">
+  <view class="doc-title">TOPTIPS</view>
+  <view class="zan-btns" style="margin-top: 30vh;">
+    <button class="zan-btn zan-btn--primary" bindtap="topTipSuccess">显示toptip</button>
+    <button class="zan-btn zan-btn--danger" bindtap="topTipError">显示toptip</button>
+    <button class="zan-btn zan-btn--warn" bindtap="topTipWarn">显示toptip</button>
+  </view>
+</view>
+<template is="zan-toptip" data="{{ zanTopTip }}"></template>

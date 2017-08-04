@@ -89,7 +89,7 @@
 
 /* loading */
 .zan-btn--loading {
-  color: transparent;
+  color: transparent!important;
   opacity: 1;
 }
 .zan-btn--loading::before {
@@ -125,12 +125,26 @@
 
 /* disabled */
 .zan-btn.zan-btn--disabled {
-  /* 防止样式被 button[disabled] 的规则覆盖，所以使用了important */
-  color: #999 ! important;
-  background: #f8f8f8 ! important;
-  border-color: #e5e5e5 ! important;
-  cursor: not-allowed ! important;
-  opacity: 1 ! important;
+  color: #999;
+  background: #f8f8f8;
+  border-color: #e5e5e5;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.zan-btn.zan-btn--disabled.zan-btn--primary{
+  color: rgba(255,255,255,.6);
+  background: rgba(68,187,0,.6);
+  border-color: rgba(68,187,0,.6);
+}
+.zan-btn.zan-btn--disabled.zan-btn--danger{
+  color: rgba(255,255,255,.6);
+  background: rgba(255,68,68,.6);
+  border-color: rgba(255,68,68,.6);
+}
+.zan-btn.zan-btn--disabled.zan-btn--warn{
+  color: rgba(255,255,255,.6);
+  background: rgba(288,136,85,.6);
+  border-color: rgba(288,136,85,.6);
 }
 
 /* :last-child */
@@ -139,4 +153,3 @@
   margin-bottom: 0;
   margin-right: 0;
 }
-

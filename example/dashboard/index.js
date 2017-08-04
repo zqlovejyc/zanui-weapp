@@ -47,11 +47,11 @@ Page({
         name: 'Tab',
         path: '/example/tab/index'
       }, {
-        name: 'Toast',
-        path: '/example/toast/index'
+        name: 'Tip',
+        path: '/example/tip/index'
       }, {
-        name: 'Toptips',
-        path: '/example/toptips/index'
+        name: 'Toptip',
+        path: '/example/toptip/index'
       }
     ]
   },

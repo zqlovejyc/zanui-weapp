@@ -12,7 +12,7 @@
 @import "label/index.wxss";
 @import "quantity/index.wxss";
 @import "steps/index.wxss";
-@import "toast/index.wxss";
-@import "toptips/index.wxss";
+@import "toptip/index.wxss";
+@import "tip/index.wxss";
 @import "icon/index.wxss";
 @import "switch/index.wxss";

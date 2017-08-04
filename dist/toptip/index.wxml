@@ -1,0 +1,4 @@
+<!--topTip template-->
+<template name="zan-toptip">
+    <view class="zan-{{zanTopTip.type}} {{zanTopTip.show?'slideDown':'slideUp'}}">{{zanTopTip.content}}</view>
+</template>

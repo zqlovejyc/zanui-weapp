@@ -1,6 +1,7 @@
 .zan-badge {
   position: relative;
 }
+
 .zan-badge__count {
   position: absolute;
   top: -8px;

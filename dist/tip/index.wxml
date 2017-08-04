@@ -1,0 +1,6 @@
+<!--tip template-->
+<template name="zan-tip">
+    <view class="zan-tip-mask {{zanTip.showMask?'flex':''}}">
+        <view class="zan-tip {{zanTip.show?'scaleIn':'scaleOut'}} {{zanTip.shake&&zanTip.show?'shake':''}}">{{zanTip.content}}</view>
+    </view>    
+</template>

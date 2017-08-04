@@ -7,18 +7,24 @@
   position: relative;
   padding: 15px 0;
 }
-
+/*垂直步骤点击背景色*/
+.zan-steps--vsteps .zan-steps__step:active {
+  background: #F8F8F8;
+}
 .zan-steps--vsteps .zan-steps__step--done {
   color: #44BB00;
 }
 
 .zan-steps--vsteps .zan-steps__line {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: -22px;
+  bottom: 22px;
   left: 7px;
   width: 1px;
   background-color: #e5e5e5;
+}
+.zan-steps--vsteps .zan-steps__step:first-child .zan-steps__line{
+  display: none;
 }
 
 .zan-steps--vsteps .zan-steps__title {
@@ -46,6 +52,10 @@
   height: 5px;
   background-color: #cacaca;
   border-radius: 10px;
+}
+
+.zan-steps--vsteps .zan-steps__step--done .zan-steps__line {
+  background-color: #06bf04;
 }
 
 .zan-steps--vsteps .zan-steps__step--done .zan-steps__circle {

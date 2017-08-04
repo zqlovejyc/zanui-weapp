@@ -1,0 +1,10 @@
+<import src="/dist/tip/index.wxml" />
+
+<view class="container">
+  <view class="doc-title">TIP</view>
+  <view class="zan-btns" style="margin-top: 30vh;">
+    <button class="zan-btn" bindtap="showTip">显示tip</button>
+    <button class="zan-btn" bindtap="showTipShake">显示tip（晃动）</button>
+  </view>
+</view>
+<template is="zan-tip" data="{{ zanTip }}"></template>
