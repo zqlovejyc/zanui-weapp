@@ -4,14 +4,14 @@ Page({
   data: {
     steps: [
       {
-        current: true,
+        current: false,
         done: true,
         text: '步骤一',
         desc: '10.01'
       },
       {
-        done: false,
-        current: false,
+        done: true,
+        current: true,
         text: '步骤二',
         desc: '10.02'
       },
