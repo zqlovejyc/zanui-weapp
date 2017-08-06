@@ -103,10 +103,9 @@
   margin-top: -8px;
   border: 3px solid #e5e5e5;
   border-color: #666 #e5e5e5 #e5e5e5 #e5e5e5;
-  border-radius: 8px;
+  border-radius: 50%;
   box-sizing: border-box;
-  animation: btn-spin 0.6s linear;
-  animation-iteration-count: infinite;
+  animation: btn-spin 0.6s linear infinite;
 }
 .zan-btn--primary.zan-btn--loading::before,
 .zan-btn--warn.zan-btn--loading::before,

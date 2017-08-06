@@ -16,8 +16,8 @@
 
   <block wx:elif="{{loading}}">
     <view class="zan-loadmore">
-      <view class="zan-loading"></view>
-      <view class="zan-loadmore__tips">加载中...</view>
+      <view class="zan-{{spin?'spin':'loading'}}"></view>
+      <view class="zan-loadmore__tips">{{text?text:'加载中...'}}</view>
     </view>
   </block>
 
