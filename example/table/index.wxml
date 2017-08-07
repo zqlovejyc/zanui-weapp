@@ -55,7 +55,7 @@
 </view>
 <!--full-bordered-->
 <template is="zan-loadmore" data="{{nodata: true,nodata_str:'full-bordered'}}" />
-<view class="zan-table zan-table-bordered" style="background-color: rgb(255, 255, 255);margin:30rpx;">
+<view class="zan-table zan-table-bordered" style="background-color: rgb(255, 255, 255);">
   <view class="zan-table-tr">
     <view class="zan-table-th">Product</view>
     <view class="zan-table-th">Price</view>
