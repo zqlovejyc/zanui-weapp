@@ -2,7 +2,7 @@
 <view class="container">
 
   <view class="doc-title">LOADMORE</view>
-
+  <template is="zan-loadmore" data="{{loading: true,spin:true}}" />
   <template is="zan-loadmore" data="{{loading: true}}" />
   <template is="zan-loadmore" data="{{nodata: true}}" />
   <template is="zan-loadmore" data="{{nomore: true}}" />
