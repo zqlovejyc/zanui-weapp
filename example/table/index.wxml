@@ -1,0 +1,73 @@
+<import src="/dist/loadmore/index.wxml" />
+<!--defautl-->
+<template is="zan-loadmore" data="{{nodata: true,nodata_str:'default'}}" />
+<view class="zan-table">
+  <view class="zan-table-tr">
+    <view class="zan-table-th">Product</view>
+    <view class="zan-table-th">Price</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Apple</view>
+    <view class="zan-table-td">$1.25</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Banana</view>
+    <view class="zan-table-td">$1.20</view>
+  </view>
+</view>
+<!--cell-bordered=false-->
+<template is="zan-loadmore" data="{{nodata: true,nodata_str:'cell-bordered=false'}}" />
+<view class="zan-table zan-table-no-cell-bordered" style="background-color: rgb(255, 255, 255);">
+  <view class="zan-table-tr">
+    <view class="zan-table-th">Product</view>
+    <view class="zan-table-th">Price</view>
+    <view class="zan-table-th">Quantity</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Apple</view>
+    <view class="zan-table-td">$1.25</view>
+    <view class="zan-table-td"> x 1</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Banana</view>
+    <view class="zan-table-td">$1.20</view>
+    <view class="zan-table-td"> x 2</view>
+  </view>
+</view>
+<!--content-bordered=false-->
+<template is="zan-loadmore" data="{{nodata: true,nodata_str:'content-bordered=false'}}" />
+<view class="zan-table zan-table-no-cell-bordered zan-table-no-content-bordered" style="background-color: rgb(255, 255, 255);">
+  <view style="background-color: rgb(247, 247, 247);" class="zan-table-tr">
+    <view class="zan-table-th">Product</view>
+    <view class="zan-table-th">Price</view>
+    <view class="zan-table-th">Quantity</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Apple</view>
+    <view class="zan-table-td">$1.25</view>
+    <view class="zan-table-td"> x 1</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Banana</view>
+    <view class="zan-table-td">$1.20</view>
+    <view class="zan-table-td"> x 2</view>
+  </view>
+</view>
+<!--full-bordered-->
+<template is="zan-loadmore" data="{{nodata: true,nodata_str:'full-bordered'}}" />
+<view class="zan-table zan-table-bordered" style="background-color: rgb(255, 255, 255);margin:30rpx;">
+  <view class="zan-table-tr">
+    <view class="zan-table-th">Product</view>
+    <view class="zan-table-th">Price</view>
+    <view class="zan-table-th">Quantity</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Apple</view>
+    <view class="zan-table-td zan-colspan-2">$1.25 x 10</view>
+  </view>
+  <view class="zan-table-tr">
+    <view class="zan-table-td">Banana</view>
+    <view class="zan-table-td">$1.20</view>
+    <view class="zan-table-td">x 08</view>
+  </view>
+</view>

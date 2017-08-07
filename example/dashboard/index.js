@@ -52,6 +52,9 @@ Page({
       }, {
         name: 'Toptip',
         path: '/example/toptip/index'
+      }, {
+        name: 'Table',
+        path: '/example/table/index'
       }
     ]
   },

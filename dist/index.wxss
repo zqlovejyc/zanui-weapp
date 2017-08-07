@@ -14,5 +14,6 @@
 @import "steps/index.wxss";
 @import "toptip/index.wxss";
 @import "tip/index.wxss";
+@import "table/index.wxss";
 @import "icon/index.wxss";
 @import "switch/index.wxss";

@@ -1,0 +1,7 @@
+.zan-loadmore--nodata{
+    margin-top:50rpx;
+    margin-bottom:20rpx;
+}
+.zan-colspan-2{
+    flex: 2!important;
+}
