@@ -1,0 +1,18 @@
+.zan-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.zan-grid>view {
+  width: 33.33333333%;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.zan-grid>view:nth-child(3n+1):before {
+  border: 0;
+}

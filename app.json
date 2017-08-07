@@ -18,7 +18,8 @@
     "example/tip/index",
     "example/table/index",
     "example/icon/index",
-    "example/dialog/index"
+    "example/dialog/index",
+    "example/1px/index"
   ],
   "window":{
     "navigationBarBackgroundColor": "#FAFAFA",

@@ -1,0 +1,17 @@
+<view class="zan-grid">
+    <view class="zan-1px-b zan-1px-l">1</view>
+    <view class="zan-1px-b zan-1px-l">2</view>
+    <view class="zan-1px-b zan-1px-l">3</view>
+    <view class="zan-1px-b zan-1px-l">4</view>
+    <view class="zan-1px-b zan-1px-l">5</view>
+    <view class="zan-1px-b zan-1px-l">6</view>
+    <view class="zan-1px-b zan-1px-l">7</view>
+    <view class="zan-1px-b zan-1px-l">8</view>
+    <view class="zan-1px-b zan-1px-l">9</view>
+    <view class="zan-1px-b zan-1px-l">10</view>
+    <view class="zan-1px-b zan-1px-l">11</view>
+    <view class="zan-1px-b zan-1px-l">12</view>
+    <view class="zan-1px-b zan-1px-l">13</view>
+    <view class="zan-1px-b zan-1px-l">14</view>
+    <view class="zan-1px-b zan-1px-l">15</view>
+</view>

@@ -55,6 +55,9 @@ Page({
       }, {
         name: 'Table',
         path: '/example/table/index'
+      }, {
+        name: '1px',
+        path: '/example/1px/index'
       }
     ]
   },

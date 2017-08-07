@@ -17,3 +17,4 @@
 @import "table/index.wxss";
 @import "icon/index.wxss";
 @import "switch/index.wxss";
+@import "1px/index.wxss";
