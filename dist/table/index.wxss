@@ -2,7 +2,7 @@
   line-height: 80rpx;
   position: relative;
   box-sizing: border-box;
-  font-size:16px;
+  font-size:15px;
 }
 .zan-table:after {
   content: " ";
