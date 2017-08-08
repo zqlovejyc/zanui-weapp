@@ -1,7 +1,8 @@
-page{
-  padding:20rpx;
-  box-sizing:border-box;
+page {
+  padding: 20rpx;
+  box-sizing: border-box;
 }
+
 .zan-grid {
   display: flex;
   flex-direction: row;
@@ -17,3 +18,6 @@ page{
   box-sizing: border-box;
 }
 
+.zan-grid>view:active {
+  background: #F8F8F8;
+}
