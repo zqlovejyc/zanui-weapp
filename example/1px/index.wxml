@@ -1,4 +1,4 @@
-<view class="zan-grid">
+<view class="zan-grid zan-1px-t zan-1px-r">
     <view class="zan-1px-b zan-1px-l">1</view>
     <view class="zan-1px-b zan-1px-l">2</view>
     <view class="zan-1px-b zan-1px-l">3</view>
