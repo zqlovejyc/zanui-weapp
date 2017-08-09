@@ -11,6 +11,8 @@
 .zan-dialog__container {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 750rpx;
   background: white;
   transform: translateY(150%);
