@@ -1,7 +1,7 @@
 .zan-loadmore {
   position: relative;
   width: 65%;
-  margin: 21px auto;
+  margin: 25rpx auto;
   line-height: 20px;
   font-size: 14px;
   text-align: center;
@@ -47,10 +47,6 @@
 .zan-loadmore--nomore {
   border-top: 1rpx solid #e5e5e5;
   color: #999;
-}
-
-.zan-loadmore--nodata {
-  margin-top: 120px;
 }
 
 .zan-loadmore--nodata .zan-loadmore__tips {
