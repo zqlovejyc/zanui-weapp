@@ -16,9 +16,7 @@ module.exports = {
             clearTimeout(zanTopTip.timer);
             zanTopTip.timer = undefined;
         }
-        if (typeof callback === 'number') {
-            duration = callback;
-        }
+        if (typeof callback === 'number') duration = callback;
         let timer = setTimeout(() => {
             self.setData({
                 'zanTopTip.show': false,
