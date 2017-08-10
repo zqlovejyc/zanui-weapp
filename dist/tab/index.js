@@ -4,8 +4,6 @@ var Tab = {
     var componentId = dataset.componentId;
     var selectedId = dataset.itemId;
     var data = { componentId, selectedId };
-
-    console.info('[zan:tab:change]', data);
     if (this.handleZanTabChange) {
       this.handleZanTabChange(data);
     } else {
@@ -13,5 +11,4 @@ var Tab = {
     }
   }
 };
-
 module.exports = Tab;
