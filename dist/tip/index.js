@@ -9,7 +9,7 @@ module.exports = {
    * @param {Boolean} shake 
    * @param {Number} duration 
    */
-  zanTip(content = '', callback = null, shake = false, duration = 3000) {
+  zanTip(content = '', callback = null, shake = false, duration = 2000) {
     let self = this,
       zanTip = self.data.zanTip || {};
     if (zanTip.timer) {
@@ -28,7 +28,7 @@ module.exports = {
           'zanTip.showMask': false,
           'zanTip.timer': undefined
         });
-      }, 300);
+      }, 100);
       typeof callback === 'function' && callback();
     }, duration);
     self.setData({
