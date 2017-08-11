@@ -1,4 +1,6 @@
 .zan-table {
+  width:100%;
+  background: #fff;
   line-height: 80rpx;
   position: relative;
   box-sizing: border-box;
