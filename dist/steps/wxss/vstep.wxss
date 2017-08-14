@@ -7,34 +7,57 @@
   position: relative;
   padding: 15px 0;
 }
+
 /*垂直步骤点击背景色*/
-.zan-steps--vsteps .zan-steps__step:active {
-  background: #F8F8F8;
+.zan-steps--vsteps .zan-steps__step:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  border-bottom: 1px solid #e5e5e5;
 }
+
+.zan-steps--vsteps .zan-steps__step:last-child:after{
+  display: none;
+}
+
 .zan-steps--vsteps .zan-steps__step--done {
   color: #44BB00;
 }
 
 .zan-steps--vsteps .zan-steps__line {
   position: absolute;
-  top: -22px;
-  bottom: 22px;
+  top: -50%;
+  bottom: 0;
   left: 7px;
   width: 1px;
   background-color: #e5e5e5;
 }
+
 .zan-steps--vsteps .zan-steps__step:first-child .zan-steps__line{
-  display: none;
+  top:50%;
 }
 
 .zan-steps--vsteps .zan-steps__title {
   display: inline-block;
   line-height: 20px;
   padding-left: 27px;
+  padding-right: 10px;
 }
 
 .zan-steps--vsteps .zan-steps__title--desc {
-  padding-left: 3px;
+  padding-left: 27px;
+  padding-right: 10px;
 }
 
 .zan-steps--vsteps .zan-steps__icons {
@@ -77,7 +100,7 @@
   height: 13px;
 }
 
-.zan-steps--vsteps .zan-steps__step--first-child .zan-steps__title::before {
+.zan-steps--vsteps .zan-steps__step--first-child .zan-steps__title:before {
   content: '';
   position: absolute;
   top: 0;
@@ -88,7 +111,7 @@
   z-index: 1;
 }
 
-.zan-steps--vsteps .zan-steps__step--last-child .zan-steps__title::after {
+.zan-steps--vsteps .zan-steps__step--last-child .zan-steps__title:after {
   content: '';
   position: absolute;
   top: 50%;
