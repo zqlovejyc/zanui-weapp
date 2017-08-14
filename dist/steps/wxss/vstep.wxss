@@ -8,7 +8,6 @@
   padding: 15px 0;
 }
 
-/*垂直步骤点击背景色*/
 .zan-steps--vsteps .zan-steps__step:after {
   content: "";
   position: absolute;
