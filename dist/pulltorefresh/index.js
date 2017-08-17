@@ -43,7 +43,7 @@ module.exports = {
   /**
    * 移动离开
    */
-  bindTouchEnd() {
+  bindTouchEnd(e) {
     let self = this;
     if (self.data.zanPullToRefresh.deltaY > 0 && self.data.zanPullToRefresh.scrollTop < -40) {
       self.setData({
