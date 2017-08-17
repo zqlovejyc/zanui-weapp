@@ -19,7 +19,8 @@
     "example/table/index",
     "example/icon/index",
     "example/dialog/index",
-    "example/1px/index"
+    "example/1px/index",
+    "example/pulltorefresh/index"
   ],
   "window":{
     "navigationBarBackgroundColor": "#FAFAFA",
@@ -28,5 +29,5 @@
     "backgroundTextStyle":"dark",
     "backgroundColor": "#f9f9f9"
   },
-  "debug": true
+  "debug": false
 }

@@ -18,3 +18,4 @@
 @import "icon/index.wxss";
 @import "switch/index.wxss";
 @import "1px/index.wxss";
+@import "pulltorefresh/index.wxss";

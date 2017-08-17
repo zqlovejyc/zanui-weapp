@@ -3,3 +3,4 @@ exports.Quantity = require('./quantity/index');
 exports.TopTip = require('./toptip/index');
 exports.Tip = require('./tip/index');
 exports.Switch = require('./switch/index');
+exports.PullToRefresh=require('./pulltorefresh/index');

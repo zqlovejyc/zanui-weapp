@@ -1,0 +1,8 @@
+<import src="../loadmore/index.wxml" />
+<template name="zan-pulltorefresh">
+    <view class="pull-to-refresh">
+        <view class="pull-to-refresh-down {{zanPullToRefresh.pullToRefreshDown?'':'pull-to-refresh-up'}}"></view>
+        <view>{{zanPullToRefresh.pullToRefreshTxt||'下拉刷新'}}</view>
+    </view>
+    <template is="zan-loadmore" data="{{refresh:zanPullToRefresh.refresh,spin:true,css:'refreshCss'}}" />    
+</template>

@@ -1,0 +1,111 @@
+<import src="/dist/pulltorefresh/index.wxml" />
+
+<view class="container">
+    <scroll-view 
+        class="scrollView" 
+        scroll-y="true"
+        enable-back-to-top="true"
+        bindscroll="bindScroll" 
+        bindtouchend="bindTouchEnd"
+        style="height:{{windowHeight}}px"
+    >
+        <template is="zan-pulltorefresh" data="{{zanPullToRefresh}}" />
+        <view class="zan-table zan-table-no-cell-bordered">
+            <view class="zan-table-tr">
+                <view class="zan-table-th">计划名称</view>
+                <view class="zan-table-th">状态</view>
+                <view class="zan-table-th">负责人</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+            <view class="zan-table-tr">
+                <view class="zan-table-td">计划1</view>
+                <view class="zan-table-td">已完成</view>
+                <view class="zan-table-td">张三</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

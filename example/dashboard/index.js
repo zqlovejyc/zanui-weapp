@@ -58,6 +58,9 @@ Page({
       }, {
         name: '1px',
         path: '/example/1px/index'
+      }, {
+        name: 'PullToRefresh',
+        path: '/example/pulltorefresh/index'
       }
     ]
   },
