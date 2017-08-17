@@ -47,6 +47,7 @@ module.exports = {
     let self = this;
     if (self.data.zanPullToRefresh.deltaY > 0 && self.data.zanPullToRefresh.scrollTop < -40) {
       self.setData({
+        'zanPullToRefresh.show': false,
         'zanPullToRefresh.refresh': true,
         'zanPullToRefresh.pullToRefreshDown': true,
         'zanPullToRefresh.pullToRefreshTxt': '下拉刷新'

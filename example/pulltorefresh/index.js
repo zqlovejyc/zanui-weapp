@@ -3,10 +3,10 @@ let Zan = require('../../dist/index');
 Page(Object.assign({}, Zan.PullToRefresh, {
   data: {},
   onLoad() {
-    this.zanPullToRefresh();
-    console.log(this);
+    let self = this;
+    self.zanPullToRefresh();
     let res = wx.getSystemInfoSync();
-    this.setData({
+    self.setData({
       windowHeight: res.windowHeight + 60
     });
   },

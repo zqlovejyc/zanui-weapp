@@ -1,4 +1,8 @@
 @import '../loadmore/index.wxss';
+
+.hidden{
+    visibility:hidden;
+}
 .pull-to-refresh{
     text-align: center;
     padding: 1rem;  
