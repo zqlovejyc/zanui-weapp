@@ -23,13 +23,13 @@ module.exports = {
     let self = this,
       deltaY = e.detail.deltaY,
       scrollTop = e.detail.scrollTop;
-    if (deltaY > 0 && scrollTop < -50) {
+    if (deltaY > 0 && scrollTop < -40) {
       self.setData({
         'zanPullToRefresh.pullToRefreshDown': false,
         'zanPullToRefresh.pullToRefreshTxt': '释放刷新',
       });
     }
-    if (deltaY < 0 && scrollTop > -50 && scrollTop < 0) {
+    if (deltaY < 0 && scrollTop > -40 && scrollTop < 0) {
       self.setData({
         'zanPullToRefresh.pullToRefreshDown': true,
         'zanPullToRefresh.pullToRefreshTxt': '下拉刷新',
@@ -45,7 +45,7 @@ module.exports = {
    */
   bindTouchEnd() {
     let self = this;
-    if (self.data.zanPullToRefresh.deltaY > 0 && self.data.zanPullToRefresh.scrollTop < -50) {
+    if (self.data.zanPullToRefresh.deltaY > 0 && self.data.zanPullToRefresh.scrollTop < -40) {
       self.setData({
         'zanPullToRefresh.refresh': true,
         'zanPullToRefresh.pullToRefreshDown': true,
