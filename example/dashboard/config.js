@@ -60,7 +60,7 @@ export default {
                 name: 'Table 表格',
                 path: '/example/table/index'
             }, {
-                name: '1px 九宫格',
+                name: '1px 辅助线',
                 path: '/example/1px/index'
             }, {
                 name: 'PullToRefresh 下来刷新',
