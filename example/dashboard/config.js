@@ -63,7 +63,7 @@ export default {
                 name: '1px 辅助线',
                 path: '/example/1px/index'
             }, {
-                name: 'PullToRefresh 下来刷新',
+                name: 'PullToRefresh 下拉刷新',
                 path: '/example/pulltorefresh/index'
             }
         ]

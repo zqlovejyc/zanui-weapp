@@ -34,5 +34,5 @@
         "backgroundTextStyle": "dark",
         "backgroundColor": "#f9f9f9"
     },
-    "debug": true
+    "debug": false
 }
