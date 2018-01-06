@@ -20,15 +20,15 @@
 }
 
 .zan-spin{
-  width:28rpx;
-  height:28rpx;
+  width:15px;
+  height:15px;
   display: inline-block;
   vertical-align: middle;
-  border: 1.5px solid #e5e5e5;
-  border-color: #4b0 #e5e5e5 #e5e5e5 #e5e5e5;
+  border: 3px solid #C9C9C9;
+  border-top-color: #666666;
   border-radius: 50%;
   box-sizing: border-box;
-  margin-right:5rpx;
+  margin-right:5px;
   animation: spin .7s linear infinite;
 }
 

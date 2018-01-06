@@ -1,7 +1,7 @@
 <import src="/dist/toptip/index.wxml" />
 <import src="/dist/tip/index.wxml" />
 <view class="container">
-  <view class="doc-title">TOPTIPS</view>
+  <view class="doc-title">TOPTIP</view>
   <view class="zan-btns" style="margin-top: 30vh;">
     <button class="zan-btn zan-btn--primary" bindtap="topTipSuccess">显示toptip</button>
     <button class="zan-btn zan-btn--danger" bindtap="topTipError">显示toptip</button>

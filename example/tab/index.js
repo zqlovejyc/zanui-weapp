@@ -1,6 +1,6 @@
-var Zan = require('../../dist/index');
+const { Tab, extend } = require('../../dist/index');
 
-Page(Object.assign({}, Zan.Tab, {
+Page(extend({}, Tab, {
   data: {
     tab1: {
       list: [{
@@ -17,10 +17,9 @@ Page(Object.assign({}, Zan.Tab, {
         title: '待收货'
       }, {
         id: 'sign',
-        title: '已完成'
+        title: '已完成订单'
       }],
-      selectedId: 'all',
-      scroll: false
+      selectedId: 'all'
     },
     tab2: {
       list: [{

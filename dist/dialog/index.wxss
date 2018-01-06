@@ -1,28 +1,147 @@
-.zan-dialog__mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
+.zan-dialog {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;  
+    left: 0;
+    right: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.zan-dialog__container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 750rpx;
-  background: white;
-  transform: translateY(150%);
-  transition: all 0.4s ease;
-  z-index: 11;
-}
-.zan-dialog--show .zan-dialog__container {
-  transform: translateY(0);
-}
-.zan-dialog--show .zan-dialog__mask {
-  display: block;
+.zan-dialog--container {
+    width: 80%;
+    font-size: 16px;
+    overflow: hidden;
+    border-radius: 4px;
+    color: #333;
+    margin-top:-15%;
+    height: auto;
 }
 
+.zan-dialog--mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+
+.zan-dialog__header {
+    position: relative;
+    background: #ffffff;
+    padding: 15px 0 0;
+    text-align: center;    
+}
+
+.zan-dialog__content {
+    position: relative;
+    padding: 15px 20px;
+    line-height: 1.5;
+    min-height: 40px;
+    background: #ffffff;
+}
+
+.zan-dialog__content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scaleY(0.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.zan-dialog__content--title {
+    color: #999;
+    font-size: 14px;
+}
+
+.zan-dialog__button {
+    line-height: 50px;
+    height: 50px;
+    padding: 0 5px;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: relative;
+    background: #ffffff;
+    font-size: 16px;
+    text-align: center;    
+}
+
+.zan-dialog--show {
+    display: flex!important;
+}
+
+/*水平*/
+.zan-dialog__footer--horizon {
+    display: flex;
+}
+
+.zan-dialog__footer--horizon .zan-dialog__button {
+    flex: 1;
+}
+
+.zan-dialog__footer--horizon .zan-dialog__button:not(:last-child)::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px; 
+    border-right: 1px solid #e5e5e5;
+    transform-origin: 0 0;
+    transform: scaleX(0.5);
+}
+
+/*垂直*/
+.zan-dialog__footer--vertical .zan-dialog__button:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scaleY(0.5);
+    transform-origin: 0 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+/*zan-scaleIn*/
+@keyframes zan-scaleIn {
+  0% {
+    transform: scale(0.5);
+  }
+  45% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.zan-scaleIn {
+  animation: zan-scaleIn .3s ease forwards;
+}
+/*zan-scaleOut*/
+@keyframes zan-scaleOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+}
+.zan-scaleOut {
+  animation: zan-scaleOut .3s ease forwards;
+}
