@@ -9,7 +9,7 @@ module.exports = {
      * @param {Function} callback 
      * @param {Number} duration 
      */
-    zanTopTip(content = '', type = '', callback = null, duration = 3000) {
+    showZanTopTip(content = '', type = '', callback = null, duration = 3000) {
        let self = this,
             zanTopTip = self.data.zanTopTip || {};
         if (zanTopTip.timer) {

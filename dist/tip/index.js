@@ -9,7 +9,7 @@ module.exports = {
    * @param {Boolean} shake 
    * @param {Number} duration 
    */
-  zanTip(content = '', callback = null, shake = false, duration = 2000) {
+  showZanTip(content = '', callback = null, shake = false, duration = 2000) {
     let self = this,
       zanTip = self.data.zanTip || {};
     if (zanTip.timer) {

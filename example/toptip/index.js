@@ -4,14 +4,14 @@ Page(Object.assign({}, Zan.TopTip, Zan.Tip, {
     data: {},
     topTipSuccess() {
         let self = this;
-        self.zanTopTip('toptip的内容', 'success', () => {
-            self.zanTip('回调函数', true);
+        self.showZanTopTip('toptip的内容', 'success', () => {
+            self.showZanTip('回调函数', true);
         });
     },
     topTipError() {
-        this.zanTopTip('toptip的内容', 'error');
+        this.showZanTopTip('toptip的内容', 'error');
     },
     topTipWarn() {
-        this.zanTopTip('toptip的内容', 'warn');
+        this.showZanTopTip('toptip的内容', 'warn');
     }
 }));
