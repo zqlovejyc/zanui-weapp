@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-size:15px;
 }
-.zan-table:after {
+.zan-table::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -28,7 +28,7 @@
 .zan-table .zan-table-th {
   font-weight: 500;
 }
-.zan-table.zan-table-bordered:before {
+.zan-table.zan-table-bordered::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -58,8 +58,8 @@
   border-right: 0;
   border-bottom: 0;
 }
-.zan-table .zan-table-td:before,
-.zan-table .zan-table-th:before {
+.zan-table .zan-table-td::before,
+.zan-table .zan-table-th::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -73,14 +73,14 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.zan-table.zan-table-no-content-bordered .zan-table-td:before {
+.zan-table.zan-table-no-content-bordered .zan-table-td::before {
   border-bottom-width: 0;
 }
-.zan-table.zan-table-no-content-bordered .zan-table-tr:last-child .zan-table-td:before {
+.zan-table.zan-table-no-content-bordered .zan-table-tr:last-child .zan-table-td::before {
   border-bottom-width: 2rpx;
 }
-.zan-table .zan-table-td:after,
-.zan-table .zan-table-th:after {
+.zan-table .zan-table-td::after,
+.zan-table .zan-table-th::after {
   content: " ";
   position: absolute;
   right: 0;
@@ -94,15 +94,15 @@
   -webkit-transform: scaleX(0.5);
           transform: scaleX(0.5);
 }
-.zan-table.zan-table-no-cell-bordered .zan-table-td:after,
-.zan-table.zan-table-no-cell-bordered .zan-table-th:after {
+.zan-table.zan-table-no-cell-bordered .zan-table-td::after,
+.zan-table.zan-table-no-cell-bordered .zan-table-th::after {
   border-right-width: 0;
 }
-.zan-table .zan-table-tr .zan-table-td:last-child:after,
-.zan-table .zan-table-tr .zan-table-th:last-child:after {
+.zan-table .zan-table-tr .zan-table-td:last-child::after,
+.zan-table .zan-table-tr .zan-table-th:last-child::after {
   border-right-width: 0;
 }
-.zan-table.zan-table-bordered .zan-table-tr .zan-table-td:last-child:after,
-.zan-table.zan-table-bordered .zan-table-tr .zan-table-th:last-child:after {
+.zan-table.zan-table-bordered .zan-table-tr .zan-table-td:last-child::after,
+.zan-table.zan-table-bordered .zan-table-tr .zan-table-th:last-child::after {
   border-right-width: 2rpx;
 }
