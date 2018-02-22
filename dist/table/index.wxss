@@ -45,18 +45,13 @@
 .zan-table .zan-table-td,
 .zan-table .zan-table-th {
   flex: 1;
-  border-bottom: 2rpx solid #e0e0e0;
-  border-right: 2rpx solid #e0e0e0;
+  position: relative;
+  border-right: 0;
+  border-bottom: 0;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.zan-table .zan-table-td,
-.zan-table .zan-table-th {
-  position: relative;
-  border-right: 0;
-  border-bottom: 0;
 }
 .zan-table .zan-table-td::before,
 .zan-table .zan-table-th::before {
