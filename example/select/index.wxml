@@ -38,4 +38,11 @@
       <template is="zan-select" data="{{ items, checkedValue: checked.input, componentId: 'input',customIcon:true,iconLeft:true }}" ></template>
     </view>
   </view>
+
+  <view class="zan-panel-title">自定义图标、输入框和多选</view>
+  <view class="zan-panel">
+    <view>
+      <template is="zan-select" data="{{ items, checkedValue: checked.multi, componentId: 'multi',customIcon:true,iconLeft:true,multi:true }}" ></template>
+    </view>
+  </view>
 </view>
