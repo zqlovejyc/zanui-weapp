@@ -6,7 +6,7 @@
 .zan-1px-r {
   position: relative;
 }
-.zan-1px:before {
+.zan-1px::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -20,7 +20,7 @@
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
-.zan-1px-t:before {
+.zan-1px-t::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -34,7 +34,7 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.zan-1px-b:after {
+.zan-1px-b::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -48,7 +48,7 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.zan-1px-tb:before {
+.zan-1px-tb::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -62,7 +62,7 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.zan-1px-tb:after {
+.zan-1px-tb::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -76,7 +76,7 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.zan-1px-l:before {
+.zan-1px-l::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -90,7 +90,7 @@
   -webkit-transform: scaleX(0.5);
           transform: scaleX(0.5);
 }
-.zan-1px-r:after {
+.zan-1px-r::after {
   content: " ";
   position: absolute;
   right: 0;
