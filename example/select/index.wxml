@@ -18,10 +18,24 @@
     </view>
   </view>
 
-  <view class="zan-panel-title">自定义图标</view>
+  <view class="zan-panel-title">自定义图标向右</view>
   <view class="zan-panel">
     <view>
       <template is="zan-select" data="{{ items, checkedValue: checked.custom, componentId: 'custom',customIcon:true }}" ></template>
+    </view>
+  </view>
+
+  <view class="zan-panel-title">自定义图标向左</view>
+  <view class="zan-panel">
+    <view>
+      <template is="zan-select" data="{{ items:items1, checkedValue: checked.left, componentId: 'left',customIcon:true,iconLeft:true }}" ></template>
+    </view>
+  </view>
+
+  <view class="zan-panel-title">自定义图标和输入框</view>
+  <view class="zan-panel">
+    <view>
+      <template is="zan-select" data="{{ items, checkedValue: checked.input, componentId: 'input',customIcon:true,iconLeft:true }}" ></template>
     </view>
   </view>
 </view>

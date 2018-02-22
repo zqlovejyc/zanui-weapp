@@ -3,23 +3,49 @@
     <label wx:for="{{ items }}" wx:key="value">
       <view class="zan-cell">
         <radio class="zan-select__radio" value="{{ item.value }}" checked="{{ item.value === checkedValue }}"/>
-        <view
-          class="zan-cell__bd"
-          style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}"
-        >{{ item.name }}</view>
         <block wx:if="{{ customIcon }}">
-            <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft">
-                <view class="zan-icon zan-icon-passed" style="color:{{ parse.getColor(activeColor) }}"></view>
-            </view>
-            <view wx:if="{{ item.value != checkedValue }}" class="zan-cell__ft">
-                <view class="zan-icon zan-icon-check"></view>
-            </view>
+            <block wx:if="{{ iconLeft }}">                
+                <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft" style="text-align:left;">
+                    <view class="zan-icon zan-icon-passed" style="color:{{ parse.getColor(activeColor) }}"></view>
+                </view>
+                <view wx:if="{{ item.value != checkedValue }}" class="zan-cell__ft" style="text-align:left;">
+                    <view class="zan-icon zan-icon-check"></view>
+                </view>
+                <view
+                    class="zan-cell__bd"
+                    style="padding-left:5px;"
+                >
+                    <view class="zan-select__bd">
+                        <view class="zan-select__left">{{ item.name }}</view>
+                        <block wx:if="{{item.bindinput}}">
+                            <input class="zan-select__right"  bindinput="{{item.bindinput}}" placeholder="{{item.placeholder||'点击请输入信息'}}"/>
+                        </block>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view
+                    class="zan-cell__bd"
+                    style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}"
+                >{{ item.name }}</view>
+                <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft">
+                    <view class="zan-icon zan-icon-passed" style="color:{{ parse.getColor(activeColor) }}"></view>
+                </view>
+                <view wx:if="{{ item.value != checkedValue }}" class="zan-cell__ft">
+                    <view class="zan-icon zan-icon-check"></view>
+                </view>
+            </block>
+            
         </block>
         <block wx:else>
+            <view
+                class="zan-cell__bd"
+                style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}"
+            >{{ item.name }}</view>
             <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft">
                 <icon type="success_no_circle" color="{{ parse.getColor(activeColor) }}" size="14"></icon> 
             </view>            
-        </block>        
+        </block>       
       </view>
     </label>
   </radio-group>

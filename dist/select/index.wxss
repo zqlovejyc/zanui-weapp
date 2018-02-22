@@ -2,3 +2,14 @@
 .zan-select__list .zan-select__radio {
     display: none;
 }
+.zan-select__bd{
+    display: flex;
+    align-items: center;
+}
+.zan-select__left{
+    text-align: left;
+}
+.zan-select__right{
+    flex: 1;
+    text-align: right;
+}
