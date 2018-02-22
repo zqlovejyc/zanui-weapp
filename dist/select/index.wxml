@@ -7,9 +7,19 @@
           class="zan-cell__bd"
           style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}"
         >{{ item.name }}</view>
-        <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft">
-          <icon type="success_no_circle" color="{{ parse.getColor(activeColor) }}" size="14"></icon>
-        </view>
+        <block wx:if="{{ customIcon }}">
+            <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft">
+                <view class="zan-icon zan-icon-passed" style="color:{{ parse.getColor(activeColor) }}"></view>
+            </view>
+            <view wx:if="{{ item.value != checkedValue }}" class="zan-cell__ft">
+                <view class="zan-icon zan-icon-check"></view>
+            </view>
+        </block>
+        <block wx:else>
+            <view wx:if="{{ item.value === checkedValue }}" class="zan-cell__ft">
+                <icon type="success_no_circle" color="{{ parse.getColor(activeColor) }}" size="14"></icon> 
+            </view>            
+        </block>        
       </view>
     </label>
   </radio-group>

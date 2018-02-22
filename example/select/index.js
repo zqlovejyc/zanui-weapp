@@ -18,7 +18,8 @@ Page(Object.assign({}, Zan.CheckLabel, {
 
     checked: {
       base: -1,
-      color: -1
+      color: -1,
+      custom:-1
     },
 
     activeColor: '#4b0'
