@@ -6,7 +6,6 @@
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 2px;
-  border: 1rpx solid #e5e5e5;
   font-size: 16px;
   line-height: 45px;
   height: 45px;
@@ -16,7 +15,18 @@
   vertical-align: middle;
 }
 .zan-btn::after {
-  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
 }
 .zan-btns {
   margin: 15px;
@@ -26,19 +36,28 @@
 .zan-btn--primary {
   color: #fff;
   background-color: #4b0;
-  border-color: #0a0;
+}
+
+.zan-btn--primary::after {
+    border-color: #0a0;
 }
 
 .zan-btn--warn {
   color: #fff;
   background-color: #f85;
-  border-color: #f85;
+}
+
+.zan-btn--warn::after {
+    border-color: #f85;
 }
 
 .zan-btn--danger {
   color: #fff;
   background-color: #f44;
-  border-color: #e33;
+}
+
+.zan-btn--danger::after {
+    border-color: #e33;
 }
 
 /* size */

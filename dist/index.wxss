@@ -25,3 +25,4 @@
 @import "./tag/index.wxss";
 @import "./tip/index.wxss";
 @import "./toptip/index.wxss";
+@import "./actionsheet/index.wxss";

@@ -81,6 +81,10 @@ export default {
         title: '操作反馈',
         content: [
             {
+                name: 'Actionsheet 行动按钮',
+                path: '/example/actionsheet/index'
+            },
+            {
                 name: 'Dialog 弹出框',
                 path: '/example/dialog/index'
             }, {
