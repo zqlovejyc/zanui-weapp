@@ -12,15 +12,15 @@ module.exports = {
     showZanTopTip(content = '', type = '', callback = null, duration = 3000) {
        let self = this,
             zanTopTip = self.data.zanTopTip || {};
-        if (zanTopTip.timer) {
+        if (zanTopTip && zanTopTip.timer) {
             clearTimeout(zanTopTip.timer);
-            zanTopTip.timer = undefined;
+            zanTopTip.timer = null;
         }
         if (typeof callback === 'number') duration = callback;
         let timer = setTimeout(() => {
             self.setData({
                 'zanTopTip.show': false,
-                'zanTopTip.timer': undefined
+                'zanTopTip.timer': null
             });
             typeof callback == 'function' && callback();
         }, duration);

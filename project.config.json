@@ -8,7 +8,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.7.2",
+	"libVersion": "1.9.91",
 	"appid": "wx9f99999b1a2aca4c",
 	"projectname": "ZanUI-GitHub",
 	"condition": {
