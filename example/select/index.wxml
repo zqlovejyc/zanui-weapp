@@ -18,6 +18,23 @@
     </view>
   </view>
 
+  <view class="zan-panel-title">Form 表单中的select应用</view>
+  <form bindsubmit="formSubmit">
+    <view class="zan-panel">
+      <view>
+        <template
+          is="zan-select"
+          data="{{ items:items1, checkedValue: checked.form, name: 'formtest', componentId: 'form' }}" ></template>
+      </view>
+    </view>
+
+    <view class="zan-btns">
+      <button
+        class="zan-btn zan-btn--primary"
+        formType="submit">提交数据</button>
+    </view>
+  </form>
+
   <view class="zan-panel-title">自定义图标向右</view>
   <view class="zan-panel">
     <view>

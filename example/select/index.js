@@ -1,5 +1,5 @@
 let Zan = require('../../dist/index');
-Page(Object.assign({}, Zan.CheckLabel,Zan.extractComponentId, {
+Page(Object.assign({}, Zan.Select,Zan.extractComponentId, {
 
     data: {
         items: [
@@ -31,6 +31,7 @@ Page(Object.assign({}, Zan.CheckLabel,Zan.extractComponentId, {
         checked: {
             base: -1,
             color: -1,
+            form: -1,
             custom: -1,
             input: -1,
             left: -1,
@@ -45,6 +46,11 @@ Page(Object.assign({}, Zan.CheckLabel,Zan.extractComponentId, {
             [`checked.${componentId}`]: value
         });
     },
+
+    formSubmit(event) {
+        console.log('[zan:field:submit]', event.detail.value);
+    },
+
     bindInput(e) {
         let self = this,
             componentId = self.extractComponentId(e),
