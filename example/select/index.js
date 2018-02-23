@@ -1,6 +1,5 @@
-var Zan = require('../../dist/index');
-
-Page(Object.assign({}, Zan.CheckLabel, {
+let Zan = require('../../dist/index');
+Page(Object.assign({}, Zan.CheckLabel,Zan.extractComponentId, {
 
     data: {
         items: [
@@ -8,7 +7,8 @@ Page(Object.assign({}, Zan.CheckLabel, {
                 padding: 0,
                 value: '1',
                 name: '选项一',
-                bindinput: 'bindInput'
+                componentId:'input',
+                bindInput: 'bindInput'
             },
             {
                 padding: 0,
@@ -46,6 +46,9 @@ Page(Object.assign({}, Zan.CheckLabel, {
         });
     },
     bindInput(e) {
-        console.log(e.detail.value);
+        let self = this,
+            componentId = self.extractComponentId(e),
+            value = e.detail.value;
+        console.log(componentId,value);
     }
 }));

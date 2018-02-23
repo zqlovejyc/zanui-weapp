@@ -9,6 +9,7 @@ exports.TopTip = require('./toptip/index');
 exports.Tip = require('./tip/index');
 exports.PullToRefresh = require('./pulltorefresh/index');
 
-const { extend } = require('./common/helper');
+const { extend,extractComponentId } = require('./common/helper');
 exports.extend = extend;
+exports.extractComponentId = { extractComponentId: extractComponentId };
 

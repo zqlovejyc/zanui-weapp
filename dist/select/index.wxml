@@ -15,8 +15,8 @@
                             <view class="zan-cell__bd" style="{{ parse.getItemStyle(item, checkedValue, activeColor,iconLeft,multi) }}">
                                 <view class="zan-select__bd">
                                     <view class="zan-select__left">{{ item.name }}</view>
-                                    <block wx:if="{{item.bindinput}}">
-                                        <input class="zan-select__right" bindinput="{{item.bindinput}}" placeholder="{{item.placeholder||'点击请输入信息'}}" />
+                                    <block wx:if="{{ item.bindInput }}">
+                                        <input class="zan-select__right" data-component-id="{{ item.componentId }}" bindinput="{{ item.bindInput }}" placeholder="{{ item.placeholder||'请点击输入' }}" />
                                     </block>
                                 </view>
                             </view>
@@ -58,8 +58,8 @@
                             <view class="zan-cell__bd" style="{{ parse.getItemStyle(item, checkedValue, activeColor,iconLeft) }}">
                                 <view class="zan-select__bd">
                                     <view class="zan-select__left">{{ item.name }}</view>
-                                    <block wx:if="{{item.bindinput}}">
-                                        <input class="zan-select__right" bindinput="{{item.bindinput}}" placeholder="{{item.placeholder||'点击请输入信息'}}" />
+                                    <block wx:if="{{ item.bindInput }}">
+                                        <input class="zan-select__right" data-component-id="{{ item.componentId }}" bindinput="{{ item.bindInput }}" placeholder="{{ item.placeholder||'请点击输入' }}" />
                                     </block>
                                 </view>
                             </view>
