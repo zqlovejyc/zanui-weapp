@@ -62,9 +62,6 @@ export default {
             }, {
                 name: '1px 辅助线',
                 path: '/example/1px/index'
-            }, {
-                name: 'PullToRefresh 下拉刷新',
-                path: '/example/pulltorefresh/index'
             }
         ]
     },
@@ -93,6 +90,9 @@ export default {
             }, {
                 name: 'Toptip 顶部提示',
                 path: '/example/toptip/index'
+            }, {
+                name: 'PullToRefresh 下拉刷新',
+                path: '/example/pulltorefresh/index'
             }
         ]
     }
