@@ -1,3 +1,4 @@
+//组件
 exports.Actionsheet = require('./actionsheet/index');
 exports.Select = require('./select/index');
 exports.Dialog = require('./dialog/index');
@@ -10,7 +11,8 @@ exports.TopTip = require('./toptip/index');
 exports.Tip = require('./tip/index');
 exports.PullToRefresh = require('./pulltorefresh/index');
 
-const { extend,extractComponentId } = require('./common/helper');
+//方法
+const { extend,extractComponentId,extendCreator } = require('./common/helper');
 exports.extend = extend;
-exports.extractComponentId = { extractComponentId: extractComponentId };
-
+exports.extractComponentId = extractComponentId;
+exports.extendCreator = extendCreator;

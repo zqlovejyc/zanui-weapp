@@ -1,5 +1,6 @@
-let Zan = require('../../dist/index');
-Page(Object.assign({}, Zan.Select,Zan.extractComponentId, {
+const { extend,Select,extractComponentId } = require('../../dist/index');
+
+Page(extend({}, Select, {
 
     data: {
         items: [
@@ -53,7 +54,7 @@ Page(Object.assign({}, Zan.Select,Zan.extractComponentId, {
 
     bindInput(e) {
         let self = this,
-            componentId = self.extractComponentId(e),
+            componentId = extractComponentId(e),
             value = e.detail.value;
         console.log(componentId,value);
     }
