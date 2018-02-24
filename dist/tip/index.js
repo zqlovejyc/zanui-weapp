@@ -14,7 +14,7 @@ module.exports = {
       zanTip = self.data.zanTip || {};
     if (zanTip.timer) {
       clearTimeout(zanTip.timer);
-      zanTip.timer = undefined;
+      zanTip.timer = null;
     }
     if (typeof callback === 'boolean') shake = callback;
     if (typeof callback === 'number') duration = callback;
@@ -26,7 +26,7 @@ module.exports = {
       timer = setTimeout(() => {
         self.setData({
           'zanTip.showMask': false,
-          'zanTip.timer': undefined
+          'zanTip.timer': null
         });
       }, 100);
       typeof callback === 'function' && callback();

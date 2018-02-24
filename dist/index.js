@@ -8,6 +8,7 @@ exports.Stepper = require('./stepper/index');
 exports.Switch = require('./switch/index');
 exports.Tab = require('./tab/index');
 exports.TopTip = require('./toptip/index');
+exports.Toast = require('./toast/index');
 exports.Tip = require('./tip/index');
 exports.PullToRefresh = require('./pulltorefresh/index');
 

@@ -26,3 +26,4 @@
 @import "./tip/index.wxss";
 @import "./toptip/index.wxss";
 @import "./actionsheet/index.wxss";
+@import "./toast/index.wxss";

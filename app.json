@@ -26,7 +26,8 @@
         "example/1px/index",
         "example/pulltorefresh/index",
         "example/table/index",
-        "example/actionsheet/index"
+        "example/actionsheet/index",
+        "example/toast/index"
     ],
     "window": {
         "navigationBarBackgroundColor": "#FAFAFA",

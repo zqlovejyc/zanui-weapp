@@ -85,6 +85,9 @@ export default {
                 name: 'Dialog 弹出框',
                 path: '/example/dialog/index'
             }, {
+                name: 'Toast 轻提示',
+                path: '/example/toast/index'
+            }, {
                 name: 'Tip 轻提示',
                 path: '/example/tip/index'
             }, {
