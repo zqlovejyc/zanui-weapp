@@ -37,27 +37,22 @@
   color: #fff;
   background-color: #4b0;
 }
-
 .zan-btn--primary::after {
-    border-color: #0a0;
+  border-color: #0a0;
 }
-
 .zan-btn--warn {
   color: #fff;
   background-color: #f85;
 }
-
 .zan-btn--warn::after {
-    border-color: #f85;
+  border-color: #f85;
 }
-
 .zan-btn--danger {
   color: #fff;
   background-color: #f44;
 }
-
 .zan-btn--danger::after {
-    border-color: #e33;
+  border-color: #e33;
 }
 
 /* size */
@@ -103,7 +98,7 @@
 
 /* 重写button组件的button-hover样式 */
 .button-hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* loading */
@@ -132,15 +127,6 @@
   border-color: #fff rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
 }
 
-@keyframes btn-spin {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* disabled */
 .zan-btn.zan-btn--disabled {
   color: #999;
@@ -152,17 +138,23 @@
 .zan-btn.zan-btn--disabled.zan-btn--primary{
   color: rgba(255,255,255,.6);
   background: rgba(68,187,0,.6);
-  border-color: rgba(68,187,0,.6);
+}  
+.zan-btn.zan-btn--disabled.zan-btn--primary::after{
+  border-color: rgba(68,187,0,.7);
 }
 .zan-btn.zan-btn--disabled.zan-btn--danger{
   color: rgba(255,255,255,.6);
-  background: rgba(255,68,68,.6);
-  border-color: rgba(255,68,68,.6);
+  background: rgba(255,68,68,.6);  
+}
+.zan-btn.zan-btn--disabled.zan-btn--danger::after{
+  border-color: rgba(255,68,68,.7);
 }
 .zan-btn.zan-btn--disabled.zan-btn--warn{
   color: rgba(255,255,255,.6);
-  background: rgba(288,136,85,.6);
-  border-color: rgba(288,136,85,.6);
+  background: rgba(288,136,85,.6);  
+}
+.zan-btn.zan-btn--disabled.zan-btn--warn::after{
+  border-color: rgba(288,136,85,.7);
 }
 
 /* :last-child */
@@ -170,4 +162,14 @@
 .zan-btn:last-child {
   margin-bottom: 0;
   margin-right: 0;
+}
+
+/* css3动画 */
+@keyframes btn-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
