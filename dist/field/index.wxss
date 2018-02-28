@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .zan-cell::after {
@@ -14,63 +14,64 @@
     left: 0;
     width: 200%;
     height: 200%;
-    transform: scale(0.5);
+    transform: scale(.5);
     transform-origin: 0 0;
     pointer-events: none;
     box-sizing: border-box;
     border: 0 solid #e5e5e5;
     border-bottom-width: 1px;
     left: 15px;
-    right: 0;
+    right: 0
 }
 
 .zan-cell__icon {
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 .zan-cell__bd {
-    flex: 1;
+    flex: 1
 }
 
 .zan-cell__text {
     line-height: 24px;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .zan-cell__desc {
     line-height: 1.2;
     font-size: 12px;
-    color: #666;
+    color: #666
 }
 
 .zan-cell__ft {
     position: relative;
     text-align: right;
-    color: #666;
+    color: #666
 }
 
 .zan-cell__no-pading {
-    padding: 0;
+    padding: 0
 }
 
 .zan-cell__no-pading .zan-cell__bd_padding {
-    padding: 12px 0 12px 15px;
+    padding: 12px 0 12px 15px
 }
 
 .zan-cell__no-pading .zan-cell__bd_padding .zan-form__input {
-    height: 26px;
+    height: 26px
 }
 
 .zan-cell__no-pading .zan-cell__ft_padding {
-    padding: 12px 15px 12px 0;
+    padding: 12px 15px 12px 0
 }
 
-.zan-cell--last-child::after, .zan-cell:last-child::after {
-    display: none;
+.zan-cell--last-child::after,
+.zan-cell:last-child::after {
+    display: none
 }
 
 .zan-cell--access .zan-cell__ft {
-    padding-right: 13px;
+    padding-right: 13px
 }
 
 .zan-cell--access .zan-cell__ft::after {
@@ -84,46 +85,50 @@
     border-width: 2px 2px 0 0;
     border-color: #c8c8c8;
     border-style: solid;
-    transform: translateY(-50%) matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+    transform: translateY(-50%) matrix(.71, .71, -.71, .71, 0, 0)
 }
 
 .zan-cell--switch {
     padding-top: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 6px
 }
 
 .zan-field {
     padding: 7px 15px;
-    color: #333;
+    color: #333
 }
 
 .zan-field--wrapped {
     margin: 0 15px;
-    background-color: #fff;
+    background-color: #fff
 }
 
 .zan-field--wrapped::after {
     left: 0;
     border-width: 1px;
-    border-radius: 4px;
+    border-radius: 4px
+}
+
+.zan-field.zan-field--wrapped::after {
+    display: block
 }
 
 .zan-field--wrapped+.zan-field--wrapped {
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .zan-field--error {
-    color: #f40;
+    color: #f40
 }
 
 .zan-field--wrapped.zan-field--error::after {
-    border-color: #f40;
+    border-color: #f40
 }
 
 .zan-field__title {
     color: #333;
     min-width: 65px;
-    padding-right: 10px;
+    padding-right: 10px
 }
 
 .zan-field__input {
@@ -132,13 +137,13 @@
     padding: 4px 0;
     min-height: 22px;
     height: auto;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .zan-field__placeholder {
-    font-size: 14px;
+    font-size: 14px
 }
 
 .zan-field__input--right {
-    text-align: right;
+    text-align: right
 }
